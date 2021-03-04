@@ -1,5 +1,122 @@
 body {
     margin: 0px;
-    background-color: #36393f;
-    color: aliceblue;
+    font-family: Helvetica;
+}
+.body-div {
+    height: 2000px;
+    background-color: #f2f3f5;
+    display: grid;
+    grid-template-columns: 1fr 1280px 1fr;
+    grid-template-rows: 60px 550px 1fr 200px;
+}
+/*----------------------------------TABBAR----------------------------------*/
+.tabbar-div {
+    background-color: #e3e5e8;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1280px 1fr;
+    grid-template-rows: 1fr;
+}
+.tabbar-button-div {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 60px 1fr 150px;
+    grid-template-rows: 60px;
+}
+/*----------------LOGO----------------*/
+.lumisy-logo-out-div {
+    display: grid;
+    grid-template-columns: 5px 50px 5px;
+    grid-template-rows: 5px 50px 5px;
+}
+.lumisy-logo-in-div {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.lumisy-logo-img {
+    width: 50px;
+    height: 50px;
+}
+/*----------------TABBUTTONS----------------*/
+.tabbar-button-in-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.button-paragraph {
+    font-size: 14.5pt;
+    text-align: center;
+}
+.tabbar-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #23272a;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.tabbar-link:hover {
+    text-decoration: underline;
+}
+/*----------------LUMISYBUTTONS----------------*/
+.tabbar-lumisy-button-in-div {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.tabbar-lumisy-button-link {
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: #23272a;
+    font-weight: bold;
+    border-radius: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 14px;
+}
+/*----------------------------------INTRODUCTION----------------------------------*/
+.introduction-div {
+    background-color: #23272a;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+/*----------------------------------MAIN----------------------------------*/
+.main-div {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+/*----------------------------------WEBEND----------------------------------*/
+.webend-div {
+    background-color: #23272a;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+@media (max-width: 1300px){
+    .body-div {
+        grid-template-columns: 0px 1fr 0px;
+    }
+    .tabbar-div {
+        grid-template-columns: 0px 1fr 0px;
+    }
+}
+@media (max-width: 747px){
+    .body-div {
+        grid-template-rows: 210px;
+    }
+    .tabbar-button-div {
+        grid-template-columns: 60px 90px 1fr 150px 1fr 150px;
+        grid-template-rows: 60px 150px;
+    }
+    .tabbar-button-in-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .tabbar-lumisy-button-div {
+        grid-column: 6/7;
+    }
 }
