@@ -45,7 +45,7 @@ body {
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 550px 6px 944px;
+    grid-template-columns: 550px 4px 946px;
     grid-template-rows: 100px 1fr 100px;
 }
 .DescriptionPicture {
