@@ -1,146 +1,40 @@
-@font-face {
-    font-family: montserrat;
-    src: url(Montserrat-Thin.ttf);
-}
 body {
-    font-family: montserrat;
+    font-family: menco, sans-serif;
+    font-weight: 500;
+    font-style: normal;
     margin: 0px;
-    background-color: #f6f6f6;
 }
-.MainDiv {
+.main {
+    display: grid;
+    grid-template-columns: 15px 70px 250px 1fr 15px;
+    grid-template-rows: 15px 1fr 15px;
     height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 620px;
 }
-.MainNavDiv {
-    background-color: #232429;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    display: grid;
-    grid-template-columns: 1fr 1500px 1fr;
-    grid-template-rows: 70px 1fr;
-}
-.NavDiv {
-    padding-top: 17px;
-    grid-column: 1/4;
-    grid-row: 1/2;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: 1fr;
-    display: inline;
-    text-align: center;
-}
-.NavLink {
-    text-decoration: none;
-    color: #f6f6f6;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 16pt;
-}
-.NavLink:hover {
-    text-decoration: underline;
-}
-.DescriptionDiv {
+.nav {
     grid-column: 2/3;
     grid-row: 2/3;
+    background-color: #1f2224;
+    border-radius: 35px;
     display: grid;
-    grid-template-columns: 550px 4px 946px;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 70px 70px 70px 70px 70px 1fr 70px 70px;
 }
-.DescriptionPicture {
-    width: 100%;
-    grid-column: 1/2;
-}
-.DescriptionHyphen {
-    grid-column: 2/3;
+.unav {
+    grid-column: 2/4;
     grid-row: 2/3;
-    background-color: #f6f6f6;
+    background-color: #272a2c;
+    border-radius: 35px;
 }
-.DescriptionContainerDiv {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    padding-left: 100px;
-    padding-top: 25px;
-    padding-right: 100px;
-    color: #f6f6f6;
+.mnav {
+    grid-column: 1/6;
+    grid-row: 1/4;
+    background-color: #2e3135;
 }
-.DescriptionHeading {
-    font-size: 50pt;
-    font-weight: bolder;
+.database-icon-div {
+    margin: 10px;
+    padding: 15px;
+    background-color: #272a2c;
+    border-radius: 35px;
 }
-.DescriptionContent{
-    font-size: 23pt;
-}
-.DescriptionContentSpan {
-    font-weight: bold;
-}
-.DescriptionContentLink {
-    text-decoration: none;
-    color: #5865F2;
-    font-weight: bold;
-}
-.DescriptionContentLink:hover {
-    text-decoration: underline;
-}
-@media (max-width: 1500px) {
-    .MainDiv {
-        grid-template-rows: 1070px;
-    }
-    .MainNavDiv {
-        grid-template-columns: 1fr;
-    }
-    .NavDiv {
-        grid-column: 1/2;
-    }
-    .DescriptionDiv {
-        grid-column: 1/2;
-        grid-template-columns: 1fr 550px 1fr;
-        grid-template-rows: 550px 1fr;
-    }
-    .DescriptionPicture {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .DescriptionContainerDiv{
-        grid-column: 1/4;
-        grid-row: 2/3;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .DescriptionHyphen {
-        background-color: transparent;
-    }
-}
-@media (max-width: 800px) {
-    .MainDiv {
-        grid-template-rows: 600px;
-    }
-    .MainNavDiv {
-        grid-template-rows: 200px 1fr;
-    }
-    .NavDiv {
-        display: grid;
-        text-align: right;
-    }
-    .DescriptionDiv {
-        grid-row: 1/3;
-        grid-column: 1/2;
-        grid-template-columns: 200px 1fr;
-        grid-template-rows: 200px 1fr;
-    }
-    .DescriptionPicture {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .DescriptionContainerDiv {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .DescriptionHeading {
-        font-size: 30pt;
-    }
-    .DescriptionContent{
-        font-size: 16pt;
-    }
+.database-svg{
+    fill:#dce6f0;
 }
